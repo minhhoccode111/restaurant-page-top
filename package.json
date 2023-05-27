@@ -1,0 +1,23 @@
+{
+  "name": "restaurantpagetop",
+  "version": "1.0.0",
+  "description": "Project: Restaurant Page on The Odin Project",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/minhhoccode111/restaurantPageTOP.git"
+  },
+  "author": "Hoang Minh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhhoccode111/restaurantPageTOP/issues"
+  },
+  "homepage": "https://github.com/minhhoccode111/restaurantPageTOP#readme",
+  "devDependencies": {
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
