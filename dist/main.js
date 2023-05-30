@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("window.addEventListener(\"DOMContentLoaded\", () => {\n  document.body.textContent = \"Hello World from webpack!\";\n});\n\n\n//# sourceURL=webpack://restaurantpagetop/./src/index.js?");
+eval("(function APP() {\n  window.addEventListener(\"DOMContentLoaded\", () => {\n    //The only div in index.html\n    const content = document.getElementById(\"content\");\n  });\n})();\n\n\n//# sourceURL=webpack://restaurantpagetop/./src/index.js?");
 
 /***/ })
 

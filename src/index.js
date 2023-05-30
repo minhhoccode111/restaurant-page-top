@@ -1,3 +1,6 @@
-window.addEventListener("DOMContentLoaded", () => {
-  document.body.textContent = "Hello World from webpack!";
-});
+(function APP() {
+  window.addEventListener("DOMContentLoaded", () => {
+    //The only div in index.html
+    const content = document.getElementById("content");
+  });
+})();
