@@ -1,0 +1,7 @@
+.section {
+  height: 50vh;
+  width: 100%;
+  max-width: 80rem;
+  background-color: var(--yellow_0);
+  margin: 4rem auto;
+}
