@@ -5,19 +5,8 @@ import Dripping from "./image/dripping.png";
 import Honeycomb from "./image/honeycomb.svg";
 
 window.addEventListener("DOMContentLoaded", () => {
-  document.body.textContent = "Hello World from webpack!";
-  document.body.classList.add("hello");
   const html = document.querySelector("html");
-  html.style.backgroundImage = `url(${Background})`;
-  const myBee = document.createElement("div");
-  const myBeeImage = new Image();
-  myBeeImage.src = Bee;
-  myBee.appendChild(myBeeImage);
-  html.appendChild(myBee);
-  const myDrippingImage = new Image();
-  myDrippingImage.src = Dripping;
-  myBee.appendChild(myDrippingImage);
-  const myHoneycombImage = new Image();
-  myHoneycombImage.src = Honeycomb;
-  myBee.appendChild(myHoneycombImage);
+  const myBg = new Image();
+  myBg.src = Background;
+  html.style.background = `var(--yellow_1) url(${myBg.src}) no-repeat center center fixed`;
 });
