@@ -1,4 +1,4 @@
-import About from "./img/about.jpg";
+import About from "./../img/about.jpg";
 
 function createAboutSection() {
   // Create the section element

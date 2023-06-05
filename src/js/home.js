@@ -1,4 +1,4 @@
-import Home from "./img/home.png";
+import Home from "./../img/home.png";
 
 function createHomeSection() {
   // Create the section element
