@@ -1,6 +1,6 @@
 import Home from "./../img/home.png";
 
-function createHomeSection() {
+export default function createHomeSection() {
   // Create the section element
   let section = document.createElement("section");
   section.className = "home";
@@ -52,6 +52,6 @@ function createHomeSection() {
 }
 
 // Call the createHomeSection function to create the section
-let homeSection = createHomeSection();
+// let homeSection = createHomeSection();
 
-export default homeSection;
+// export default homeSection;
