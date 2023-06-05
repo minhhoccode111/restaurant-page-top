@@ -12,4 +12,6 @@ import Plate2 from "./img/plate2.png";
 import Plate3 from "./img/plate3.png";
 import Truck from "./img/truck.svg";
 
-window.addEventListener("DOMContentLoaded", () => {});
+window.addEventListener("DOMContentLoaded", () => {
+  const main = document.querySelector("main.l-main");
+});
