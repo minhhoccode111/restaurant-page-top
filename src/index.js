@@ -1,5 +1,5 @@
 import "./css/styles.css";
-// import "./js/main.js";
+import "./js/main.js";
 
 import { homeSection } from "./js/home.js";
 import { aboutSection } from "./js/about.js";
