@@ -14,3 +14,7 @@ Project: Restaurant Page on The Odin Project
 - One of the coolest webpack features is that you can also INCLUDE ANY OTHER TYPE OF FILE, besides JavaScript, for which there is a loader or built-in Asset Modules support. This means that the same benifits listed above for JavaScript can be applied to everything used in building a website or webapp.
 - In order to import a css file from within a JavaScript module, you need to install and add the style-loader and css-loader to your module configuration with npm install --save-dev style-loader css-loader
 - the style-loader is responsible for injecting the CSS into the document at runtime, while the css-loader processes the CSS file and resolves any @import and url() statements
+
+[View all my projects Live demo links](https://minhhoccode111.github.io/allProjectssLiveDemo/)
+
+[View this project Live demo](https://minhhoccode111.github.io/restaurantPageTOP/)
