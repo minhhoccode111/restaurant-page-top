@@ -2,7 +2,7 @@ import App1 from "./../img/app1.png";
 import App2 from "./../img/app2.png";
 import Movil_app from "./../img/movil-app.png";
 
-export default function createAppSection() {
+export function createAppSection() {
   // Create the section element
   const section = document.createElement("section");
   section.className = "app section bd-container";

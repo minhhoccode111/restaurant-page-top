@@ -20,7 +20,15 @@ import Contact from "./js/contact.js";
 // import Plate3 from "./img/plate3.png";
 // import Truck from "./img/truck.svg";
 
+const main = document.querySelector("main.l-main");
+const home = createHomeSection();
+const app = createAppSection();
+main.innerHTML = "";
+main.innerHTML = home + app;
 window.addEventListener("DOMContentLoaded", () => {
-  const main = document.querySelector("main.l-main");
-  main.innerHTML = createHomeSection() + createAppSection();
+  // main.innerHTML = createHomeSection() + createAppSection();
+  console.log(createHomeSection());
+  console.log(createHomeSection);
+  console.log(createAppSection());
+  console.log(createAppSection);
 });
