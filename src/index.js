@@ -1,12 +1,12 @@
 import "./css/styles.css";
-import "./js/main.js";
+// import "./js/main.js";
 
-import createHomeSection from "./js/home.js";
-import About from "./js/about.js";
-import Service from "./js/service.js";
-import Menu from "./js/menu.js";
-import createAppSection from "./js/app.js";
-import Contact from "./js/contact.js";
+import { homeSection } from "./js/home.js";
+import { aboutSection } from "./js/about.js";
+import { serviceSection } from "./js/service.js";
+import { menuSection } from "./js/menu.js";
+import { appSection } from "./js/app.js";
+import { contactSection } from "./js/contact.js";
 
 // import About from "./img/about.jpg";
 // import App1 from "./img/app1.png";
@@ -21,14 +21,85 @@ import Contact from "./js/contact.js";
 // import Truck from "./img/truck.svg";
 
 const main = document.querySelector("main.l-main");
-const home = createHomeSection();
-const app = createAppSection();
-main.innerHTML = "";
-main.innerHTML = home + app;
-window.addEventListener("DOMContentLoaded", () => {
-  // main.innerHTML = createHomeSection() + createAppSection();
-  console.log(createHomeSection());
-  console.log(createHomeSection);
-  console.log(createAppSection());
-  console.log(createAppSection);
-});
+
+const PAGE = (function () {
+  const clearMain = () => {
+    main.innerHTML = "";
+  };
+
+  const initLoad = () => {
+    main.appendChild(homeSection);
+    main.appendChild(appSection);
+  };
+
+  const homeLoad = () => {
+    clearMain();
+    main.appendChild(homeSection);
+    main.appendChild(appSection);
+  };
+
+  const aboutLoad = () => {
+    clearMain();
+    main.appendChild(aboutSection);
+    main.appendChild(appSection);
+  };
+
+  const serviceLoad = () => {
+    clearMain();
+    main.appendChild(serviceSection);
+    main.appendChild(appSection);
+  };
+
+  const menuLoad = () => {
+    clearMain();
+    main.appendChild(menuSection);
+    main.appendChild(appSection);
+  };
+
+  const contactLoad = () => {
+    clearMain();
+    main.appendChild(contactSection);
+    main.appendChild(appSection);
+  };
+
+  return {
+    initLoad,
+    homeLoad,
+    aboutLoad,
+    serviceLoad,
+    menuLoad,
+    contactLoad,
+  };
+})();
+
+(() => {
+  const home = document.querySelector(`a[href="#home"]`);
+  const about = document.querySelector(`a[href="#about"]`);
+  const service = document.querySelector(`a[href="#services"]`);
+  const menu = document.querySelector(`a[href="#menu"]`);
+  const contact = document.querySelector(`a[href="#contact"]`);
+
+  window.addEventListener("DOMContentLoaded", () => {
+    PAGE.initLoad();
+  });
+
+  home.addEventListener("click", () => {
+    PAGE.homeLoad();
+  });
+
+  about.addEventListener("click", () => {
+    PAGE.aboutLoad();
+  });
+
+  service.addEventListener("click", () => {
+    PAGE.serviceLoad();
+  });
+
+  menu.addEventListener("click", () => {
+    PAGE.menuLoad();
+  });
+
+  contact.addEventListener("click", () => {
+    PAGE.contactLoad();
+  });
+})();

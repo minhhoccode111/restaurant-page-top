@@ -93,6 +93,4 @@ function createMenuSection() {
   return section;
 }
 
-const menuSection = createMenuSection();
-
-export default menuSection;
+export const menuSection = createMenuSection();

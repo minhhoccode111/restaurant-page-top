@@ -110,6 +110,4 @@ function createServiceSection() {
   return section;
 }
 
-const serviceSection = createServiceSection();
-
-export default serviceSection;
+export const serviceSection = createServiceSection();

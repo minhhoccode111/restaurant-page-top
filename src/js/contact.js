@@ -48,6 +48,4 @@ function createContactSection() {
   return section;
 }
 
-const contactSection = createContactSection();
-
-export default contactSection;
+export const contactSection = createContactSection();

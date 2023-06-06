@@ -59,6 +59,4 @@ function createAboutSection() {
 }
 
 // Call the createAboutSection function to create the section
-let aboutSection = createAboutSection();
-
-export default aboutSection;
+export const aboutSection = createAboutSection();
