@@ -1,4 +1,4 @@
-# restaurantPageTOP
+# Restaurant Page The Odin Project
 
 Project: Restaurant Page on The Odin Project
 
@@ -15,6 +15,6 @@ Project: Restaurant Page on The Odin Project
 - In order to import a css file from within a JavaScript module, you need to install and add the style-loader and css-loader to your module configuration with npm install --save-dev style-loader css-loader
 - the style-loader is responsible for injecting the CSS into the document at runtime, while the css-loader processes the CSS file and resolves any @import and url() statements
 
-[View all my projects Live demo links](https://minhhoccode111.github.io/allProjectssLiveDemo/)
+[View all projects' live demos](https://minhhoccode111.github.io/all-projects-live-demos/) 
 
-[View this project Live demo](https://minhhoccode111.github.io/restaurantPageTOP/)
+[Restaurant Page TOP](https://minhhoccode111.github.io/restaurant-page-top/)
